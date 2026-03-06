@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-civic-blue: #2563EB;
+  --color-safety-orange: #EA580C;
+  --color-success-green: #16A34A;
+  --color-brand-black: #000000;
+  --color-brand-grey: #F2F2F2;
+}
+
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+  color: #000000;
+}
+
+.bg-soft-grey {
+  background-color: #F9F9F9;
+}
+
+.border-subtle {
+  border-color: #EFEFEF;
+}
+
+/* Fix Leaflet marker icon issues in some environments */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png);
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Custom scrollbar for a cleaner look */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

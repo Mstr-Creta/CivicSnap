@@ -1,0 +1,8 @@
+{
+  "name": "CivicSnap",
+  "description": "Snap a photo. Drop a pin. Fix your neighborhood. Tired of dodging the same pothole or ignoring that overflowing garbage bin? Stop venting in WhatsApp groups and start driving real change with CivicSnap",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
